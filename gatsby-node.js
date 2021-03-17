@@ -48,7 +48,7 @@ exports.createPages = async ({ actions, graphql }) => {
       component: path.resolve(`src/templates/blog.js`), // Just like `createPage()`
     })
 
-    console.log(posts.data.allStrapiPost.nodes)
+    //console.log(posts.data.allStrapiPost.nodes)
 
     posts.data.allStrapiPost.nodes.forEach(post => {
         createPage({
@@ -56,7 +56,7 @@ exports.createPages = async ({ actions, graphql }) => {
           component: path.resolve(`src/templates/post/post.js`),
           context:{
             data:post,
-          }
+          },
         })
     });
   }

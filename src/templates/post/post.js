@@ -7,7 +7,7 @@ import "./post.scss"
 export default function post(props) {
     const { pageContext } = props;
     const { data: post} = pageContext
-    console.log(post);
+    //console.log(post);
     return (
         <BlogLayout className="post">
            <Seo
