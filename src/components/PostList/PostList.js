@@ -17,7 +17,7 @@ export default function PostList(props) {
                 <Grid.Column key={post.id} mobile={16} tablet={16} computer={5}>
                     <Link to={`/${post.url} `}>
                         <Card className="post-list__item">
-                            <Image src={post.miniature.publicURL} />
+                            {/* <Image src={post.miniature.publicURL} /> */}
                             <p>{post.title} </p>
                             <Card.Content>
                                 <Card.Header>{post.title} </Card.Header>
